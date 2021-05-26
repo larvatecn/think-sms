@@ -27,7 +27,7 @@ This is a sms expansion for the thinkphp6
 
 ## 环境需求
 
-- PHP >= 7.2
+- PHP >= 7.3
 
 ## Installation
 
