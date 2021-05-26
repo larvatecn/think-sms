@@ -7,11 +7,13 @@
 
 namespace larva\sms;
 
+use Overtrue\EasySms\EasySms;
 use think\Facade;
 
 class Sms extends Facade
 {
-    protected static function getFacadeClass()
+
+    protected static function getFacadeClass(): string
     {
         return EasySms::class;
     }
