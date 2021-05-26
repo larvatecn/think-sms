@@ -10,9 +10,16 @@ namespace larva\sms;
 use Overtrue\EasySms\EasySms;
 use think\Facade;
 
+/**
+ * Class Sms
+ * @mixin EasySms
+ * @author Tongle Xu <xutongle@gmail.com>
+ */
 class Sms extends Facade
 {
-
+    /**
+     * @return string
+     */
     protected static function getFacadeClass(): string
     {
         return EasySms::class;
