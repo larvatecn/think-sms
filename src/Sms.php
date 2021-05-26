@@ -8,14 +8,13 @@
 namespace larva\sms;
 
 use Overtrue\EasySms\EasySms;
-use think\Facade;
 
 /**
- * Class Sms
+ * SMS 门面
  * @mixin EasySms
  * @author Tongle Xu <xutongle@gmail.com>
  */
-class Sms extends Facade
+class Sms extends \think\Facade
 {
     /**
      * @return string
