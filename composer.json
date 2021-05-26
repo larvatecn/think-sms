@@ -35,7 +35,7 @@
         "larva\\sms\\Service"
       ],
       "config":{
-        "trace": "config/sms.php"
+        "sms": "config/sms.php"
       }
     }
   },
