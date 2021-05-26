@@ -1,0 +1,45 @@
+{
+  "name": "larva/think-sms",
+  "description": "The ThinkPHP SMS package.",
+  "license": "MIT",
+  "homepage": "https://www.larva.com.cn",
+  "support": {
+    "issues": "https://github.com/larvatecn/think-sms/issues",
+    "source": "https://github.com/larvatecn/think-sms"
+  },
+  "authors": [
+    {
+      "name": "Larva Team",
+      "email": "support@larva.com.cn"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "topthink/framework": "^6.0.0",
+    "overtrue/easy-sms": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "larva\\sms\\": "src"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    },
+    "think": {
+      "services": [
+        "larva\\sms\\Service"
+      ],
+      "config":{
+        "trace": "config/sms.php"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
