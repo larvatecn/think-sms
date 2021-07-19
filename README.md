@@ -101,7 +101,7 @@ return [
 
 ```php
 try {
-    $res = sms_send('13800138000', ['content'  => '您的验证码为: 6379','template' => '259734', 'data' => [6379]]);
+    $res = sms('13800138000', ['content'  => '您的验证码为: 6379','template' => '259734', 'data' => [6379]]);
     print_r($res);
 } catch (InvalidArgumentException $e) {
     print_r($e->getMessage());
