@@ -1,9 +1,6 @@
 <?php
-/**
- * This is NOT a freeware, use is subject to license terms
- * @copyright Copyright (c) 2010-2099 Jinan Larva Information Technology Co., Ltd.
- * @link http://www.larva.com.cn/
- */
+
+declare(strict_types=1);
 
 namespace larva\sms;
 
@@ -25,10 +22,5 @@ class Service extends \think\Service
         $this->app->bind(EasySms::class, function () {
             return new EasySms($this->app->config->get('sms'));
         });
-    }
-
-    public function boot(): void
-    {
-
     }
 }

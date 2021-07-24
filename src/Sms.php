@@ -1,22 +1,22 @@
 <?php
-/**
- * This is NOT a freeware, use is subject to license terms
- * @copyright Copyright (c) 2010-2099 Jinan Larva Information Technology Co., Ltd.
- * @link http://www.larva.com.cn/
- */
+
+declare(strict_types=1);
 
 namespace larva\sms;
 
 use Overtrue\EasySms\EasySms;
+use think\Facade;
 
 /**
  * SMS 门面
  * @mixin EasySms
  * @author Tongle Xu <xutongle@gmail.com>
  */
-class Sms extends \think\Facade
+class Sms extends Facade
 {
     /**
+     * 获取当前Facade对应类名
+     * @access protected
      * @return string
      */
     protected static function getFacadeClass(): string
