@@ -1,0 +1,20 @@
+name: Deploy to Gitee
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - run: pnpm run build
+      - run: |
+          git config user.email "xutongle@msn.com"
+          git config user.name "Tongle Xu"
+          git remote add origin https://fyblzds:${{ secrets.GITEE_TOKEN }}@gitee.com/larvatech/think-sms.git
+          git push origin HEAD:master --force
