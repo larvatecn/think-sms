@@ -8,8 +8,6 @@ This is a sms expansion for the thinkphp6
 
 ## 平台支持
 
-## 平台支持
-
 - [腾讯云 SMS](https://cloud.tencent.com/product/sms)
 - [Ucloud](https://www.ucloud.cn)
 - [七牛云](https://www.qiniu.com/)
