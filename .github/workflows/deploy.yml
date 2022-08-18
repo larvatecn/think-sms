@@ -12,7 +12,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - run: pnpm run build
       - run: |
           git config user.email "xutongle@msn.com"
           git config user.name "Tongle Xu"
