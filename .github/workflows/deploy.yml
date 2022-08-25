@@ -19,4 +19,4 @@ jobs:
           git config user.name "Tongle Xu"
           git remote rm origin
           git remote add origin https://fyblzds:${{ secrets.GITEE_TOKEN }}@gitee.com/larvatech/think-sms.git
-          git push -f origin master
+          git push -f origin master --tags
